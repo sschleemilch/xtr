@@ -87,7 +87,7 @@
 %
 % Use this package for new German hyphenation and to set some 
 % captions to German (e.g. Abstract -> Zusammenfassung)
-% \usepackage[ngerman]{babel}
+\usepackage[ngerman]{babel}
 
 %
 % Select input file coding Latin1 or UTF8.
@@ -127,170 +127,15 @@
 % have to be run twice to clear warning/error messages.
 
 
+\usepackage{cite}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage[cmex10]{amsmath}
 
 
 
 
-% *** CITATION PACKAGES ***
-%
-%\usepackage{cite}
-% cite.sty was written by Donald Arseneau
-% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
-% not currently provide for hyperlinked citations.
-% The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
-% The documentation is contained in the cite.sty file itself.
-
-
-
-
-
-
-% *** GRAPHICS RELATED PACKAGES ***
-%
-\ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-\else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
-  % \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
-\fi
-% graphicx was written by David Carlisle and Sebastian Rahtz. It is
-% required if you want graphics, photos, etc. graphicx.sty is already
-% installed on most LaTeX systems. The latest version and documentation can
-% be obtained at: 
-% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
-% Another good source of documentation is "Using Imported Graphics in
-% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
-% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
-%
-% latex, and pdflatex in dvi mode, support graphics in encapsulated
-% postscript (.eps) format. pdflatex in pdf mode supports graphics
-% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
-% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
-% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
-% well as large increases in file sizes.
-%
-% You can find documentation about the pdfTeX application at:
-% http://www.tug.org/applications/pdftex
-
-
-
-
-
-% *** MATH PACKAGES ***
-%
-%\usepackage[cmex10]{amsmath}
-% A popular package from the American Mathematical Society that provides
-% many useful and powerful commands for dealing with mathematics. If using
-% it, be sure to load this package with the cmex10 option to ensure that
-% only type 1 fonts will utilized at all point sizes. Without this option,
-% it is possible that some math symbols, particularly those within
-% footnotes, will be rendered in bitmap form which will result in a
-% document that can not be IEEE Xplore compliant!
-%
-% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
-% thus preventing page breaks from occurring within multiline equations. Use:
-%\interdisplaylinepenalty=2500
-% after loading amsmath to restore such page breaks as IEEEtran.cls normally
-% does. amsmath.sty is already installed on most LaTeX systems. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
-
-
-
-
-
-% *** SPECIALIZED LIST PACKAGES ***
-%
-%\usepackage{algorithmic}
-% algorithmic.sty was written by Peter Williams and Rogerio Brito.
-% This package provides an algorithmic environment fo describing algorithms.
-% You can use the algorithmic environment in-text or within a figure
-% environment to provide for a floating algorithm. Do NOT use the algorithm
-% floating environment provided by algorithm.sty (by the same authors) or
-% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
-% algorithm float types and packages that provide these will not provide
-% correct IEEE style captions. The latest version and documentation of
-% algorithmic.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
-% There is also a support site at:
-% http://algorithms.berlios.de/index.html
-% Also of interest may be the (relatively newer and more customizable)
-% algorithmicx.sty package by Szasz Janos:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
-
-
-
-
-% *** ALIGNMENT PACKAGES ***
-%
-%\usepackage{array}
-% Frank Mittelbach's and David Carlisle's array.sty patches and improves
-% the standard LaTeX2e array and tabular environments to provide better
-% appearance and additional user controls. As the default LaTeX2e table
-% generation code is lacking to the point of almost being broken with
-% respect to the quality of the end results, all users are strongly
-% advised to use an enhanced (at the very least that provided by array.sty)
-% set of table tools. array.sty is already installed on most systems. The
-% latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/tools/
-
-
-%\usepackage{mdwmath}
-%\usepackage{mdwtab}
-% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
-% especially mdwmath.sty and mdwtab.sty which are used to format equations
-% and tables, respectively. The MDWtools set is already installed on most
-% LaTeX systems. The lastest version and documentation is available at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
-
-
-% IEEEtran contains the IEEEeqnarray family of commands that can be used to
-% generate multiline equations as well as matrices, tables, etc., of high
-% quality.
-
-
-%\usepackage{eqparbox}
-% Also of notable interest is Scott Pakin's eqparbox package for creating
-% (automatically sized) equal width boxes - aka "natural width parboxes".
-% Available at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
-
-
-
-
-
-% *** SUBFIGURE PACKAGES ***
-%\usepackage[tight,footnotesize]{subfigure}
-% subfigure.sty was written by Steven Douglas Cochran. This package makes it
-% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
-% work, it is a good idea to load it with the tight package option to reduce
-% the amount of white space around the subfigures. subfigure.sty is already
-% installed on most LaTeX systems. The latest version and documentation can
-% be obtained at:
-% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
-% subfigure.sty has been superceeded by subfig.sty.
 
 
 
@@ -464,7 +309,7 @@
 
 
 % The paper headers
-\markboth{Hauptseminar Sicherheit in der Informationstechnik, Sommersemester 2011}%
+\markboth{Hauptseminar Sicherheit in der Informationstechnik, Sommersemester 2015}%
 %\markboth{Advanced Seminar for Security in Information Technology, Summer Term 2011}%
 {Sebastian Schleemilch: XTR Public Key System}
 
@@ -501,271 +346,244 @@
 
 \begin{abstract}
 %\boldmath
-Put the abstract here. The abstract should be 200-300 words long and must
-answer the following questions:
-\begin{itemize}
-   \item Why is this topic important and interesting?
-   \item What is the topic?
-\end{itemize}
-It's a good writing style to answer the "why" question first by putting the
-topic in a broader context. 
-
+Viele der heutigen Kryptosystemen basieren auf der Unlösbarkeit des diskreten Logarithmus Problems. 
+Zu dieser Kategorie gehört DSA für die Erzeugung von digitalen Signaturen, der Diffie-Hellman Schlüsseltausch sowie das ElGamal-Signaturverfahren.
+Das hier vorgestellte XTR-Verfahren kann auf alle gängigen Verfahren angewendet werden die auf dem diskreten Logarithmus Problem über
+einer multiplikativen Gruppe eines endlichen Körpers basieren. Das Ziel von XTR ist eine kompaktere Darstellung des endlichen Körpers mit Hilfe einer Untergruppe.
+Um die Alltagstauglichkeit von Kryptosystemen zu erhöhen, sollten sie so unauffällig wie möglich in die Anwendung integriert werden können. XTR leistet hier einen guten Beitrag.
+Mit XTR sind die zu übertragenen Schlüssellängen (=Datenmenge), bei nachweislich gleichbleibender Sicherheit, kürzer. Außerdem sind die erforderlichen Berechnungen
+für die Kryptosysteme effizienter als bei vergleichbaren Verfahren. Somit bietet sich das Verfahren auch für die Verwendung in Low-Power-Anwendungen wie z.B. SmartCards an.
 \end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%IEEEtran, journal, \LaTeX, paper, template.
-%\end{IEEEkeywords}
 
 
+\section{Einleitung}
+\label{sec:einleitung}
+Der Wunsch nach der Verschlüsselung von digitalen Daten wird sowohl im privaten als auch im geschäftlichen Bereich immer größer.
+Ausschlaggebend für die Verwendung von Verschlüsselungstechnologien sind deren Sicherheit sowie deren Benutzbarkeit.
+Grundsätzlich gibt es zwei Verfahren um eine Ende-zu-Ende Verschlüsselung umzusetzen.
+Es gibt die symmetrische Verschlüsselung, bei der sich Sender \emph{A} und Empfänger \emph{B} auf einen gemeinsamen privaten Schlüssel einigen. Diesen Schlüssel verwenden die Teilnehmer um geheime Nachrichten auszutauschen. Das Problem liegt hier bei dem sicheren Austausch dieses Schlüssels, ohne dass ein Angreifer die Möglichkeit hat den Schlüssel mitzulesen. Der orthogonale Ansatz ist die Verwendung von Schlüsselpaaren pro Gesprächsteilnehmer. Sowohl Teilnehmer \emph{A} als auch \emph{B} erzeugen jeweils einen öffentlichen sowie einen privaten Schlüssel. Der öffentliche Teil des Schlüsselpaares kann in einer vertrauenswürdigen, für jeden Teilnehmer zugänglichen, Datenbank gespeichert werden um "`Man-in-the-middle"''-Angriffe zu vermeiden. Möchte \emph{A} eine Nachricht an \emph{B} schicken, besorgt sich \emph{A} den öffentlichen Schlüssel von \emph{B} und verschlüsselt mit diesem die Nachricht \emph{m}. Nur \emph{B} kann diese Nachricht mit dem nur \emph{B} bekannten privaten Schlüssel lesen.
 
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-% \IEEEpeerreviewmaketitle
+\section{Mathematische Grundlagen der Gruppen und der Diffie-Hellman Schlüsselaustausch}
+\label{sec:dh}
+Diffie-Hellman ist ein Schlüsselaustauschverfahren (DH) mit dessen Hilfe Teilnehmer \emph{A} und \emph{B} ihren geheimen Schlüssel für eine zukünftig symmetrische Verschlüsselung über einen unsicheren Übertragungskanal austauschen können. Obwohl ein Angreifer möglicherweise die gesamte Kommunikation mithört, ist er nicht in der Lage sich den geheimen Schlüssel zu erzeugen. Dieses Verfahren und die dabei verwendeten Elemente sind eine
+gute Grundlage für das Verständnis von XTR, da sich XTR auch für dieses Verfahren eignet.
 
+Für den DH-Schlüsselaustausch benötigt man eine Primzahl \emph{p}, sowie eine \emph{multiplikative zyklische Gruppe $Z_p^*$} über dieser Primzahl.
 
+Eine Gruppe im mathematischen Sinn besteht allgemein aus Elementen die sich Verknüpfen lassen, wie z.B. durch die Addition "`\emph{+}"', 
+Multiplikation "`\emph{$\cdot$}"' oder der Division "`\emph{\%}"' aber auch durch komplexere Verknüpfungen wie der Berechnung "`$(a+b) \bmod c$"'. Die Gruppe muss außerdem folgende Eigenschaften besitzen\cite{gruppe}:
 
-%\section{Einleitung}
-\section{Introduction}
-In general a scientific paper starts with an introduction to the topic.
+\begin{itemize}
+	\item Assoziativität bezüglich der Verknüpfung $\circ$: $a \circ (b \circ c) = (a \circ b) \circ c$
+	\item Es muss für jedes Element ein neutrales Element \emph{b} geben so dass mit der Verknüpfung $\circ$ gilt: $a \circ b = a$ 
+	\item Es muss für jedes Element ein inverses Element \emph{b} geben so dass mit der Verknüpfung $\circ$ gilt: $a \circ b = \emph{neutrales Element}$
+\end{itemize}
 
+So besteht beispielsweise $Z_{10}$ aus den Elementen $\{0,1,2,3,4,5,6,7,8,9\}$. Diese Elemente bilden bezüglich der Addition mod 10 eine Gruppe, nicht aber bezüglich der Multiplikation mod 10. Hier gibt es für einige Elemente kein inverses Element um das neutrale Element der Multiplikation, also die Zahl 1 zu errechnen. 
+Sei $x \in \{0,2,4,5,6,8\}$ und $y \in Z_{10}$. Für eine multiplikative Gruppe muss für alle Elemente die Eigenschaft $x * y = 1 \bmod 10$ gelten.
+$x$ enthält in diesem Beispiel genau die Elemente ohne Lösung.
+Entfernt man die Elemente $x$ aus $Z_{10}$, verbleibt dann also \emph{multiplikative Gruppe $Z_{10}^*$} $= \{1,3,7,9\}$\cite{mulgruppe}.
 
-%\section{Stand der Technik}
-\section{State of the Art}
-In this section an analysis of the available literature on the topic is done.
-This section may be split or subdivided into several sections or subsections.
+Allgemein besteht eine Gruppe $Z_n^*$ aus Elementen die zu \emph{n} Teilerfremd sind. Ist \emph{n} eine Primzahl \emph{p},
+so besitzt diese Gruppe also $\emph{n}-1$ Elemente (z.B. $Z_7^* = \{1,2,3,4,5,6\}$).
 
-\subsection{Subsection Heading Here}
-Subsection text here.
+Eine zyklische Gruppe liegt vor, wenn die Gruppe aus den Potenzen eines einzelnen Elementes erzeugt werden kann. Beispielsweise lässt sich die zyklische multiplikative Gruppe $Z_7^* = \{1,2,3,4,5,6\}$ durch Exponenten des Elements $5 \bmod 7$ erzeugen ($\{ 5^1, 5^2, 5^3, 5^4, 5^5, 5^6\}  = \{5, 4, 6, 2, 3, 1\} = \{1, 2, 3, 4, 5, 6\}$). Die Zahl \emph{5} aus diesem Beispiel wird Generator \emph{g} genannt. Eine Gruppe $Z_n^*$ ist außerdem auf jeden Fall zyklisch, falls $n = 2, 4, p^k, 2p^k$. Für XTR ist außerdem der Begriff einer Untergruppe wichtig. Eine Untergruppe besteht aus einer Teilmenge der Obergruppe. Sie muss jedoch in sich bezüglich der gewählten Verknüpfung wieder eine eigene Gruppe bilden.
 
-% needed in second column of first page if using \IEEEpubid
-%\IEEEpubidadjcol
+Für das DH-Schlüsselaustauschverfahren einigen sich die Kommunikationspartner \emph{A} und \emph{B} nun über einen unsicheren abhörbaren Kommunikationskanal auf
+einen Generator \emph{g} und eine Primzahl \emph{p} und können so die zuvor eingeführte zyklisch multiplikative Gruppe $Z_{p}^*$ bilden.
+Teilnehmer \emph{A} berechnet nun $X = g^a \bmod p$ mit einem zufälligen Wert für \emph{a} und schickt \emph{X} über den unsicheren Kanal zu \emph{B}.
+Teilnehmer \emph{B} berechnet $Y = g^b \bmod p$ und schickt \emph{Y} zu \emph{A}. Teilnehmer \emph{A} und \emph{B} können sich jetzt den geheimen Schlüssel $Y^a = g^{ab} \bmod p$ bzw.
+$X^b = g^{ab} \bmod p$ berechnen, der zukünftig für eine symmetrische Verschlüsselung verwendet werden kann.
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
-
-\section{Please Note}
-Regular research papers need at least two additional sections here. One section
-for contributions and methods and one section for the results. For seminar
-papers these sections can be omitted. 
-
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
+Ein möglicher Angreifer konnte während des Vorgangs also folgendes über den unsicheren Kanal mithören:
+ \emph{g}, \emph{p}, \emph{$X = g^a \bmod p$}, \emph{$Y = g^b \bmod p$}. 
+Um den geheimen Schlüssel $g^{ab} \bmod p$ zu rekonstruieren, müsste der Angreifer also entweder \emph{a} aus dem Wert $g^a \bmod p$ oder
+ \emph{b} aus dem Wert $g^b \bmod p$ berechnen.
+ 
+ Diese Ermittlung des Wertes ist als das \emph{diskrete Logarithmus Problem} bekannt. Die Sicherheit des DH-Schlüsselaustausches beruht also auf der Schwierigkeit
+ $g^x \bmod p$ nach \emph{x} aufzulösen. Für die Bestimmung von \emph{x} ist hier noch kein effizientes Verfahren bekannt. Das Problem wird verschärft je größer die Primzahl \emph{p} gewählt wird.
+ 
+ Allein für den Schlüsselaustausch werden also einige Daten über einen Kanal geschickt.
+ Nach heutigem Stand gilt dieses Verfahren ab einer Mächtigkeit von 1024 Bit für $Z_p^*$  als sicher.
+ 
+ Der DH-Schlüsselaustausch dient als Beispiel für eine mögliche Anwendung von XTR. Hier wird eine, für eine ausreichende Sicherheit, große zyklische multiplikative Gruppe verwendet um das diskrete Logarithmusproblem als unlösbar zu gestalten. XTR verallgemeinert das Konzept des zyklisch multiplikativen Gruppe mit der Einführung von Körpern und beschreibt ein Verfahren, mit dem ein großer Körper auf einen kleineren abgebildet werden kann.
 
 
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
+\section{XTR zur Reduktion des Kommunikationsoverheads}
+\label{sec:xtr}
+
+\subsection{Grundlagen für XTR - Galois-Körper GF}
+Das XTR Verfahren, "`Efficient and Compact Subgroup Trace Representation"' beschäftigt sich mit der Reduktion des Kommunikationsoverheads bei möglichst gleichbleibender Sicherheit, also der Minimierung der zu übertragenden Bits bei angewandten Kryptografieverfahren wie z.B. dem kurz vorgestelltem DH-Schlüsselaustausches.
+Dieses Verfahren arbeitet mit endlichen Körpern, sogenannten Galois Körpern \emph{GF}. Ein Körper ist strenger definiert als die zuvor eingeführte Gruppe. Ein Körper \emph{K} besitzt die Addition "`+"' und die Multiplikation "`$\cdot$"' als Verknüpfungen mit den folgenden Eigenschaften:
+
+\begin{itemize}
+	\item $(K,+)$ ist eine abelsche Gruppe mit neutralem Element 0, also wie die zuvor definierte Gruppe mit zusätzlichem Kommutativgesetz
+	\item $(K \backslash \{0\},\cdot)$ ist eine ablesche Gruppe mit neutralem Element 1
+	\item Distributivgesetz für alle Elemente aus K
+\end{itemize}
+
+Ein endlicher Körper (Galois Körper, GF), ist ein Körper mit einer endlichen Anzahl von Elementen.
+Für jede Primzahl $p$ und jede natürliche Zahl $n$ existiert ein Körper mit $p^n$ Elementen. Er wird mit $F_{p^n}$ oder $GF(p^n)$ bezeichnet. Hierbei ist die Addition und Multiplikation wie gewohnt  modulo p auszuführen (Ansonsten wäre der resultierende Körper nicht endlich, da eine Addition von zwei ausgewählten Elementen ein "`neues"' Element des Körpers ergeben kann).
+
+Wie bereits erwähnt, hängt die Sicherheit der Anwendung eines Verfahrens mit diskretem Logarithmus-Problem maßgeblich von der Anzahl der Elemente in so einem Körper $GF(p^n)$, also von $p^n$ ab. Der XTR-Algorithmus ist in der Lage beliebige Exponenten des Generators $g$ des Körpers $GF(p^6)$ über $GF(p^2)$ darstellen zu können. Außerdem kann die Exponentiation in diesem Teilkörper effizient berechnet werden.
+
+\subsection{Funktionsweise des XTR-Verfahrens}
+
+Die Artefakte von XTR sind wie erwähnt  $GF(p^6)$ und $GF(p^2)$. Es wird jetzt ein Generator $g \in GF(p^6) $ mit der Ordnung $ q > 6$ gewählt. Die Ordnung von $g$ ist definiert als die kleinste ganze Zahl $n$ für die gilt: $g^n \bmod p = 1$. Außerdem muss $g$ den Wert $p^2 - p +1$ teilen. Das so gewählte $g$ erzeugt nun eine Untergruppe von $GF(p^6)$ mit der Ordnung $q$. Für XTR muss im Gegensatz zu vielen anderen Verfahren weder diese Untergruppe $<g>$, noch Elemente aus $GF(p^6)$ erzeugt werden. Stattdessen reicht eine Repräsentation von $GF(p^2)$ aus.
+
+Die auszuwählende Primzahl $p$ hat die Eigenschaft $p \equiv 2 \bmod 3$, $p \equiv 2 \bmod 3$ generiert also $GF(3)*$. Daraus folgt, dass sich Elemente aus $GF(p^2)$ mit $x_1\alpha + x_2\alpha^p = x_1\alpha + x_2\alpha^2 $ darstellen lassen, wobei $x_1,x_2 \in GF(p)$ und $\alpha, \alpha^p$ die Nullstellen des nicht reduzierbaren Polynoms $X^2 + X + 1$ sind.
+
+Für Kryptosysteme müssen je nach Verfahren die verschiedensten Berechnungen durchgeführt werden. Für Elemente aus $GF(p^2)$ ergeben sich nun folgende Komplexitäten für $x,y \in GF(p^2)$:
+\begin{itemize}
+	\item $x^p = x_1^p\alpha^p + x_2^p\alpha^{2p} = x_1\alpha + x_2\alpha^2$. Die Berechnung ist also kostenlos.
+	\item $x^2$ kann auf zwei Quadrierungen und eine Multiplikation in $GF(p)$ zurückgeführt werden
+	\item $x \cdot y$ benötigt drei Multiplikationen in $GF(p)$
+\end{itemize}
+Diese Analyse kann man ebenfalls für die Elemente $x,y \in GF(p^6)$ mit gleichbleibendem $p$ durchführen. Hier zeigt sich ein deutlicher Berechnungskomplexitätsunterschied.
+So benötigt die Quadrierung in $GF(p^6)$ ca. 14 Multiplikationen in $GF(p)$, die Multiplikation $x \cdot y$ sogar 18.
+
+Die Berechnungen in $GF(p^2)$ sind also wesentlich effizienter als in $GF(p^6)$.
+
+$GF(p^2)$ (im weiteren als $K$ bezeichnet) ist offensichtlich ein Unterkörper von $GF(p^6)$ (im weiteren Verlauf als $L$ bezeichnet), da $K\subseteq L$.
+Das Paar $L$ und $K$ wird als Körpererweiterung bezeichnet ($L\backslash K$).
+
+Um die Elemente aus L ($GF(p^6)$) mit Elementen aus K ($GF(p^2)$) darzustellen, verwendet XTR die Spur(engl. Trace, Abkürzung: Tr) von L nach K. Mathematisch ist die Spur einer Körpererweiterung eine lineare Abblidung von L nach K, also die Zuordnung von Elementen des größeren Körpers L auf den kleineren Körper K. 
+
+In \cite{xtr-explanation} wird gezeigt, dass alle Elemente von $g^n \in GF(p^6)$ mit der Hilfe der Spur $Tr(g^n)$ dargestellt werden können, wobei diese Spur in $GF(p^2)$ liegt. Es wird also nur noch mit den Spuren gerechnet. Um diese Darstellung in kryptographischen Verfahren verwenden zu können, muss $Tr(g^n)$ über ein bekanntes $Tr(g)$ bestimmt werden können (Entspricht der Exponentiation von einem bekannten $g$ zu $g^n$). Es existiert ein Algorithmus, der folgende Berechnung für beliebige $n$ ermöglicht:\newline
+$S_n(Tr(g)) = (Tr(g^{n-1}), Tr(g^n),  Tr(g^{n+1}))$\newline
+Hiermit lässt sich aus $Tr(g)$ u.a. ein beliebiges $Tr(g^n)$ bestimmen. Eine entsprechende Analyse zeigt außerdem, dass die Berechnung von $Tr(g^n)$ drei mal so schnell ist wie die Berechnung von $g^n$. Das Ergebnis eines beliebigen $Tr(g^n)$ befindet sich nachweislich im Körper $GF(p^2)$, die Elemente der Berechnung $g^n$ aber in $GF(p^6)$. Das Sicherheitsniveau aufgrund der Mächtigkeit von $GF(p^6)$ bleibt also mit dieser Methode erhalten.
+
+Das Ziel, eine größere Gruppe $g^n$ mit einer kleineren Gruppe darzustellen wird also durch die Verwendung der Spur erreicht. 
+In einigen kryptografischen Verfahren wird allerdings nicht nur eine Berechnung von $g^n$ benötigt sondern meistens auch ein Produkt von zwei oder mehreren Exponentiationen von $g$, also beispielsweise $g^a \cdot g^b$. Bei der Verwendung der klassichen Repräsentation ist diese Rechnung trivial und einfach durchzuführen ($g^a \cdot g^b = g^{a+b})$. Die Berechnung über die Spur von $g$ ist dabei schwieriger. Die Publikation \cite{xtr-explanation} zeigt jedoch ein Verfahren mit dem $Tr(g^a \cdot g^b)$ effizient berechnet werden kann, sogar mit einem Effizienzzuwachs von 75\% gegenüber der Berechnung von $g^a \cdot g^b$. 
+
+\subsection{Wahl der benötigten Parameter für eine praktische Realisierung von XTR}
+\label{subsec:paramwahl}
+Eine wichtige Frage bei der praktischen Umsetzung des XTR-Verfahrens betrifft die Wahl von $p$, der Untergruppengröße $q$ von $GF(p^6)$ sowie einem geeigneten $Tr(g)$. Das Resultat wird als "`XTR group"' bezeichnet.
+Nach \cite{xtr-explanation} muss $q$ das Polynom $p^2-p+1$ teilen.
+Verglichen wird hier die Wahl der Parameter mit einer zu RSA vergleichbaren Sicherheit von 1024 Bit. Aus $p$ wird der Körper $GF(p^6)$ erzeugt.
+Dieser soll dementsprechend eine Mächtigkeit von ebenfalls 1024 Bit aufweisen. Somit ergibt sich für $p$ eine ungefähre Länge von $1024/6\approx170$ Bit. Aufgrund aktueller kryptoanalytischen Methoden sollte $p$ nicht viel kleiner als $q$ gewählt werden, also beide ca. 170Bit.
+Die Parameter können über folgende Gleichungen ermittelt werden:
+\begin{itemize}
+\item Finde ein $r$ mit den Eigenschaften: $q$ ist eine Primzahl der Länge 170 Bit und $q=r^2-r+1$  
+\item Danach muss ein $k\neq 1$ ermittelt werden für das gilt: $p=r+k\cdot q$, wobei $p$ wieder eine Länge von ca. 170 Bit besitzen sollte und außerdem $p \equiv 2 \bmod 3$ gilt. Bei der Wahl von $k \equiv 1$ vereinfacht sich die Lösung des diskreten Logarithmus-Problems und ist somit zu vermeiden.
+\item Ermittlung eines $Tr(g)$ wie in \cite{xtr-explanation} beschrieben.
+\end{itemize}
+
+Das "`public key"' Element des XTR Verfahrens ist somit das Tripel $(p,q,Tr(g))$ und kann zwischen den Kommunikationspartnern ausgetauscht werden.
+Wie beschrieben besteht es aus dem finiten Feld (generiert aus $p$), der Ordnung der Untergruppe ($q$) sowie dem Generator $Tr(g)$.
+Das XTR Verfahren unterstützt auch Protokolle, die private Schlüssel vorsehen, sowie die digitale Signierung. 
+Ein privater Schlüssel hat dann die Form $Tr(g^k)$, wobei $k$ hier der geheime Teil ist (denn $Tr(g)$ ist öffentlich). 
+
+Die explizite Anwendung des XTR Verfahrens auf speizelle Kryptosysteme wie den DH-Schlüsselaustausch, die ElGamal Verschlüsselung sowie die Nyberg-Rueppel Signatur lässt sich in \cite{xtr-explanation} nachlesen.
+
+\section{Sicherheit von XTR}
+\label{sec:sicherheit}
+\subsection{Diskreter Logarithmus der XTR-Artefakte}
+Das in \ref{sec:dh} erwähnte Logarithmus Problem muss hinsichtlich XTR auf den diskreten Logarithmus in $GF(p^t)$ angepasst untersucht werden.
+Dabei sei $<\gamma>$ eine Untergruppe der multiplikativen Gruppe $GF(p^t)$* der Ordnung $\omega$. Es lassen sich verschiedene Probleme bezüglich des Diffie-Hellman Schlüsselaustausches definieren:
+
+\begin{itemize}
+\item Diffie-Hellman Problem (DH, auch CDH genannt): Die Berechnung von $\gamma^{xy}$ aus $\gamma^x$ und $\gamma^y$, geschrieben als $DH(\gamma^x,\gamma^y) = \gamma^{xy}$
+\item Diffie-Hellman Decision (DHD, auch DDH genannt): Die Entscheidung ob für $a,b,c \in <\gamma> , c=DH(a,b)$ gilt, also die Zuordnung von $c$ zu gegebenen $a$ und $b$
+\item Diskretes Logarithmus Problem (DL): Die Berechnung von $x$ bei einem gegebenen $a = \gamma^x$, geschrieben als $x=DL(a)$
+\end{itemize}
+Es ist hier die allgemeine Vermutung dass die Unlösbarkeit des DL-Problems die Unlösbarkeit von DH und DHD impliziert.
+Eine Analyse der möglichen Angriffsmethoden zeigt die Abhängigkeit des DL-Problems von der Mächtigkeit von $<\gamma>$ sowie der Größe von $\omega$. Aufgrund der Verwendung der in \ref{subsec:paramwahl} eingeführten XTR group ist das Problem nur für diese Untergruppe zu lösen.
+In \cite{xtr-explanation} ist jedoch gezeigt dass bei einer geeigneten Wahl von $p$ und $q$ von ca. 170 Bits das DL Problem in der XTR group schwieriger zu lösen ist als die Faktorisierung in RSA mit 1020 Bits.
+
+In XTR wird jedoch mit den Spuren gerechnet so dass die Probleme DL, DH und DHD wie folgt speziell auf XTR umgeschrieben werden können.
+
+\begin{itemize}
+\item XTR-DH Problem: Berechnung von $Tr(g^{xy})$ aus $Tr(g^x)$ und $Tr(g^y)$, geschrieben $XDH(g^x, g^y) = g^{xy}$
+\item XTR-DHD: Entscheidung ob $a,b,c \in Tr(<g>) , c=XDH(a,b)$ gilt
+\item XTR-DL: Bestimmung von $x$ aus $a = Tr(g^x)$, geschrieben als $x = XDL(a)$
+\end{itemize}
+
+Bei einer genaueren Untersuchung zeigt sich hier, dass die Algorithmen zur Lösung von DL, DH oder DHD auch zur Lösung von XDL, XDH und XDHD
+mit überschaubarem Aufwand umgeschrieben werden können.
+In der Praxis genügt also ein XTR-DH Algorithmus um ein DL Problem zu lösen. Bei der Wahl der vorgeschlagenen Parameter aus \ref{subsec:paramwahl}
+ist die Lösung aber nachweislich mit der Sicherheit von RSA zu vergleichen.
+
+\subsection{Seitenkanalangriffe auf XTR}
+\label{subsec:seitenkanal}
+Seitenkanalangriffe versuchen über die Beobachtung der physikalisch auftretenden Effekte eines rechnenden Prozessors, Rückschlüsse auf die ausgeführten Anweisungen zu erhalten. Oft anzutreffen sind die Seitenkanalangriffe, die den Energieverbrauch des Prozessors aufzeichnen und auf diese Art ausgeführte Befehle zu extrahieren. Zwei bekannte Verfahren sind hier"`Simple Power Analysis (SPA)"' und "`Differential Power Analysis (DPA)"'. SPA nutzt nur Informationen aus einem einzelnen beobachteten Effekt, DPA verwendet mehrere Messquellen. Da bei der Verwendung von Smart-cards die Energieversorgung über ein externes Lesegerät drahtlos erfolgt, lässt sich hier beispielsweise die Energieverbrauchskurve leicht ermitteln.
+Ein Angreifer kann nun analysieren, welche Energiekurven zu welcher Operation gehören und beim Ablauf des Algorithmus eine Operations-Spur erzeugen, also einen rekonstruierten Kontrollfluss.
+
+Für die Seitenkanalangriffsanalyse bezüglich XTR, werden die benötigten Operationen untersucht. 
+Da XTR auf der Berechnung der Spur $Tr(g^n)\in GF(p^2)$ basiert, wird die Abkürzung $c_n = Tr(g^n)$ eingeführt, wobei $c_0=3$. Die Berechnung von $Tr(g^n)$ wird "`Single Exponentiation (XTR-SE)"' genannt.
+Es lassen sich als Konsequenz folgende Rechenregeln aufstellen:
+\begin{itemize}
+	\item $c_{-n}=c_{np}=c_n^p$
+	\item $c_{2n}=c_n^2-2c_n^p$, im weiteren als \newline $XTRDBL(c_n)$ bezeichnet
+	\item $c_{n+2}=c_1 \cdot c_{n+1} - c_1^p \cdot c_n + c_{n-1}$, im weiteren als\newline  $XTR\_C_{n+2}(c_{n-1},c_n,c_{n+1},c_1)$ bezeichnet
+	\item $c_{2n-1}=c_{n-1}\cdot c_n - c_1^p \cdot c_n^p + c_{n+1}^p$, im weiteren als\newline  $XTR\_C_{2n-1}(c_{n-1},c_n,c_{n+1},c_1)$ bezeichnet
+	\item $c_{2n+1}=c_n \cdot c_{n+1} - c_1 \cdot c_n^p + c_{n-1}^p$, im weiteren als\newline  $XTR\_C_{2n+1}(c_{n-1},c_n,c_{n+1},c_1)$ bezeichnet
+\end{itemize}
+Zuletzt lassen sich hier noch die benötigten Multiplikationen der einzelnen Operationen in $GF(p)$ ermitteln. $XTRDBL(c_n)$ benötigt eine Multiplikation,
+$XTR\_C_{n+2}$, $XTR\_C_{2n-1}$ sowie $XTR\_C_{2n+1}$ jeweils drei Multiplikationen.\cite{side-channel2}
 
 
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
+\subsubsection{SPA Seitenkanalangriff}
+Für eine Berechnung von XTR-SE werden die Operationen ($XTRDBL(c_n)$, $XTRDBL(c_n)$, $XTR\_C_{2n-1}$) oder ($XTRDBL(c_n)$, $XTRDBL(c_n)$, $XTR\_C_{2n+1}$) je nach zu berechnendem Wert wiederholt ausgeführt. Da aber $XTR\_C_{2n-1}$ sowie $XTR\_C_{2n+1}$ die gleiche Anzahl an Multiplikationen in $GF(p)$ benötigen, sind die ausgeführten Instruktionen unabhängig von dem geheimen Schlüssel (dem Exponenten aus $Tr(g^x)$).
+XTR-SE ist also unempfindlich und somit sicher gegenüber SPA Seitenkanalangriffen.
 
+%\subsubsection{Data-Bit DPA Seitenkanalangriff (DDPA)}
+%DDPA ist eine besondere Form des DPA und beschäftigt sich mit der Repräsentation der Bits während des Algorithmus zur Berechnung von XTR-SE.
+%Sobald der Angreifer die Funktionsweise des Algorithmus kennt, kann er die konsumierte Energie mit den veränderten Bits korrelieren und sich so geschickt die Bits des zu Exponenten der Berechnung rekonstruieren.
 
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals use top floats exclusively.
-% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
-% floats. This can be corrected via the \fnbelowfloat command of the
-% stfloats package.
+\subsubsection{Address-Bit DPA Seitenkanalangriff (ADPA)}
+ADPA nutzt die mögliche Korrelation eines geheimen Wertes und die verwendeten Register bei der Abarbeitung des Wertes. So befindet sich 
+in der Berechnung von XTR-SE aus \cite{xtr-explanation} der folgende Teilausschnitt wobei $m_i$ das i-te Bit des geheimen Wertes darstellt. $T[x]$ ist ein Feld für die Zwischenspeicherung von Werten und $C[x]$ Adressen.
+
+\begin{itemize}
+\item Falls $m_i$ = 0: Aktualisiere T[1] mit dem Register C[0] und T[2] mit dem Register C[1]
+\item Falls $m_i$ = 0: Aktualisiere T[1] mit dem Register C[1] und T[2] mit dem Register C[2]
+\end{itemize}
+
+Verknüpft der Angreifer nun die DPA Analyse mit den entsprechenden Registern C[0] und C[1], so kann er sich den geheimen Wert $m$ ermitteln.
+XTR-SE ist also hinsichtlich dieses Angriffes nicht sicher.\cite{side-channel2}
+
+\subsubsection{Verdoppelungsattacke}
+Die Verdoppelungsattacke basiert auf dem Ansatz dass ein Angreifer zwar nicht den Wert X einer Operation (z.B $2\cdot X$) ermitteln kann, jedoch kann er prüfen, ob zwei Operationen das gleiche Ergebnis liefern (Beobachtetes Ergebnis X = Beobachteten Ergebnis Y).
+$S_n$ steht für die Berechnung des Tripels $(c_{n-1},c_{n},c_{n+2})$ bei gegebenem $c_1$ (Zur Erinnerung: $c_n = Tr(g^n)$).
+Jetzt werden die Operationen verglichen bei der Berechnung von einem $S_n$ bei gegebenem $c_1$ und einem $\tilde{S}_n$ wenn $\tilde{c}_1 = c_2$.
+Der private Wert $m$ wird im XTR-SE Algorithmus mit einer For-Schleife mit Index $i$ abgearbeitet. Hierbei lässt sich beobachten dass die XTRDBL Operation im Schritt $i$ bei der Berechnung von $S_n$ im Falle eines 0-Bits von $m$ die gleiche Operation wie bei der Berechnung von $\tilde{S}_n$ im Schritt $i+1$ ist. Mit der Hilfe dieses Verfahrens lässt sich als Konsequenz mit zwei Anfragen der private Teil $m$ ermitteln.\cite{side-channel2}
 
 
 
-%\section{Fazit}
-\section{Conclusion}
-Put the conclusions of the work here. The conclusion is like the abstract with
-an additional discussion of open points.
+\section{Fazit}
+Wie in dieser Arbeit zusammengefasst, ist XTR ein geeignetes Verfahren um effiziente Verschlüsselung durchgängig verwenden zu können. 
+Bei einer immer weiter steigenden Rechenleistung von Desktop-Rechnern sowie Mobiltelefonen sollte man meinen, die benötigte Rechenleistung eines
+Verschlüsselungsverfahren spiele keine Rolle. In Hinblick auf Smard-Cards, NFC-Anwendungen und ähnliches ist die Effizienz sowie die erforderliche Bandbreite jedoch ein entscheidendes Kriterium. Der komplexe Sachverhalt des Hintergrundes von XTR kann für die praktische Anwendung aufgrund
+einfacher Algorithmen gut abstrahiert werden so dass sich die Einstiegshürde bei der Verwendung des Verfahrens reduziert. Auch die Wahl geeigneter Schlüssel wird dem Implementierendem weitestgehend abgenommen sodass die Fehleranfälligkeit für eine falsche Implementierung des Kryptografieverfahrens minimiert wird. Der hohe Effizienzzuwachs der Rechenoperationen in der XTR Darstellung von bis zu 600\% beeindruckt vor allem mit dem Hintergrund der nachweislich äquivalenten Sicherheit gegenüber vergleichbaren Verfahren. Die Unempfindlichkeit von XTR gegenüber SPA Seitenkanalattacken sprechen außerdem für das Verfahren. Mit möglichen, hier nicht vorgestellten, Gegenmaßnahmen für einen ADPA sowie einen Verdoppelungsangriff, präsentiert sich XTR als ein solides, resourcenschonendes und vor allem sicheres Verschlüsselungsverfahren mit einem breiten Anwendungsgebiet.
 
 
-
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
-
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
-
-
-% \appendices
-% \section{Proof of the First Zonklar Equation}
-% Appendix one text goes here.
-
-% you can choose not to have a title for an appendix
-% if you want by leaving the argument blank
-% \section{}
-% Appendix two text goes here.
-
-
-% use section* for acknowledgement
-%\section*{Acknowledgment}
-
-
-%The authors would like to thank...
-
-
-% Can use something like this to put references on a page
-% by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
   \newpage
 \fi
 
 
 
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
 
-% references section
+\bibliographystyle{IEEEtran}
 
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibitem{xtr-explanation}
+ A.~Lenstra and E.~R. Verheul \emph{The XTR Public Key System}, \relax Mendham, N.A and Eindhofen, Netherlands 2000.
+\bibitem{side-channel2}
+D.~Hand, J.~Lin and K. Sakurai \emph{On Security of XTR Public Key Cryptosystems Against Side Channel Attacks}, \relax Korea, Seoul and Japan, Fukuoka 2004
+\bibitem{gruppe}
+H.W.~Lang \emph{Mathematische Grundlagen - Gruppe}, \relax \newline Available from: "`http://www.iti.fh-flensburg.de/lang/algorithmen/grundlagen/gruppe.htm"',
+28.08.2000
+\bibitem{mulgruppe}
+H.W.~Lang \emph{Mathematische Grundlagen - multiplikative Gruppe modulo n}, \relax \newline Available from: "`http://www.iti.fh-flensburg.de/lang/krypto/grund/gruppezn.htm"',
+28.08.2000
+
+
 
 \end{thebibliography}
 
-% biography section
-% 
-% If you have an EPS/PDF photo (graphicx package needed) extra braces are
-% needed around the contents of the optional argument to biography to prevent
-% the LaTeX parser from getting confused when it sees the complicated
-% \includegraphics command within an optional argument. (You could create
-% your own custom macro containing the \includegraphics command to make things
-% simpler here.)
-%\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
-% or if you just want to reserve a space for a photo:
-
-%\begin{IEEEbiography}{Michael Shell}
-%Biography text here.
-%\end{IEEEbiography}
-
-% if you will not have a photo at all:
-%\begin{IEEEbiographynophoto}{John Doe}
-%Biography text here.
-%\end{IEEEbiographynophoto}
-
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-%\begin{IEEEbiographynophoto}{Jane Doe}
-%Biography text here.
-%\end{IEEEbiographynophoto}
-
-% You can push biographies down or up by placing
-% a \vfill before or after them. The appropriate
-% use of \vfill depends on what kind of text is
-% on the last page and whether or not the columns
-% are being equalized.
-
-%\vfill
-
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
-
-
-
-% that's all folks
 \end{document}
 
 
